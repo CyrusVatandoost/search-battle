@@ -65,6 +65,9 @@ public class Map {
 		                if(stop) {
 		                	pause = true;
 		                	running = false;
+		                	for(Character c : characters) {
+		                		c.stop();
+		                	}
 		                }
 	                	update();
 	                    try {Thread.sleep(100);} catch (Exception ex) {}

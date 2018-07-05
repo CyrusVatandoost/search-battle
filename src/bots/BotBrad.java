@@ -11,7 +11,7 @@ public class BotBrad extends Character {
 	
 	@Override
 	public void think() {
-//		direction = (int)(Math.random() * 4);
+		direction = (int)(Math.random() * 4);
 	}
 
 }
