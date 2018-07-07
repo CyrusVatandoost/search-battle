@@ -32,8 +32,8 @@ public class BotAndy extends Character {
   			if(treasures.isEmpty()) {
   				// search for all Treasures and put them into a list
   				// treasures.addAll(basicAlgorithm());
-  				treasures.addAll(this.searchNearestTreasures());
-  				// treasures.addAll(this.searchAStarTreasures());
+  				// treasures.addAll(this.searchNearestTreasures());
+  				treasures.addAll(this.searchAStarTreasures());
   			}
   			else {
   				int targetX = treasures.get(0).getX();

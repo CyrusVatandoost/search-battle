@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.JFrame;
 
+import game.Block;
 import game.Display;
 import game.Map;
 import game.Reader;
@@ -65,7 +66,12 @@ public class Model {
 		Map map = new Map(height, width);
 		for(int y = 0; y < map.getHeight(); y++) {
 			for(int x = 0; x < map.getWidth(); x++) {
-				map.getBlocks()[x][y] = new Wall();
+				if(x == 0 || y == 0 || x == width -1 || y == height - 1) {
+					map.getBlocks()[x][y] = new Wall();
+				}
+				else {
+					map.getBlocks()[x][y] = new Block();
+				}
 			}
 		}
 		this.map = map;

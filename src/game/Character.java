@@ -17,8 +17,6 @@ public class Character extends Block implements Runnable {
 	protected int points;
 	protected Boolean play = true;
 	
-	protected Boolean play = true;
-	
 	/**
 	 * This function is the contructor of Character.
 	 * @param blocks is the 2D array of the map containing what is inside the map.
